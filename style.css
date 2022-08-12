@@ -1,0 +1,133 @@
+/* simple selector */
+
+/* universal selector */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Element selectors */
+
+p {
+    font-size: 20px;
+    color: red;
+}
+
+/* id selectors */
+
+#para1 {
+    font-size: 20px;
+    color: blue;
+    border: 1px solid black;
+}
+
+/* class selector */
+
+.para {
+    font-size: 20px;
+    color: green;
+    border: 1px solid black;
+}
+
+/* Group selectors */
+
+.head1,
+.head2 {
+    font-size: 20px;
+    color: violet;
+    border: 1px solid black;
+}
+
+
+/* combinators */
+
+/* Descendant selector */
+
+div p {
+    font-size: 20px;
+    background-color: lightslategray;
+    border: 1px solid black;
+}
+
+/* Child selector */
+
+.ch>p {
+    font-size: 20px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+/* Adjacent sibling selector */
+
+.ad+p {
+    font-size: 20px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+/* General sibling selector */
+
+.sb~p {
+    font-size: 20px;
+    background-color: greenyellow;
+    border: 1px solid black;
+}
+
+/* pseudo class */
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: violet;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* pseudo elements */
+
+.p1::first-letter {
+    color: black;
+    font-size: 40px;
+}
+
+.p1::first-line {
+    color: black;
+    font-size: 22px;
+}
+
+.p1::before {
+    content: "Prakash";
+    font-size: 30px;
+}
+
+.p1::after {
+    content: "Praveen";
+    font-size: 30px;
+}
+
+/* attribute selector */
+
+a {
+    background-color: yellow;
+}
+
+a[class] {
+    background-color: blanchedalmond;
+}
+
+a[class="g"] {
+    background-color: grey;
+}
